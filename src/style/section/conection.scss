@@ -1,0 +1,93 @@
+.conection {
+  text-align: center;
+  color: white;
+  background: rgb(0, 36, 25);
+  background: linear-gradient(311.56deg, #d45b78 -21.39%, #4b3862 75.84%);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 150px;
+  position: relative;
+
+  &__img {
+    margin-top: 215px;
+    margin-bottom: 80px;
+
+    @include desktop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+
+    @include desktop {
+      font-size: 64px;
+      line-height: 75px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+
+    @include desktop {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__boble {
+    position: absolute;
+    left: 5px;
+    bottom: 79px;
+
+    @include tablet-and-up {
+      display: none;
+    }
+  }
+
+  &__boble-one {
+    position: absolute;
+    left: 357px;
+    bottom: 16px;
+
+    @include tablet-and-up {
+      display: none;
+    }
+  }
+
+  &__bubl-3 {
+    display: none;
+
+    @include tablet {
+      display: inline;
+      position: absolute;
+      left: 5px;
+      bottom: 45px;
+    }
+
+    @include desktop {
+      display: inline;
+      position: absolute;
+      left: 115px;
+      bottom: 45px;
+    }
+  }
+
+  &__button {
+    margin-top: 70px;
+    margin-bottom: 35px;
+
+    @include desktop {
+      margin-bottom: 85px;
+    }
+  }
+}
