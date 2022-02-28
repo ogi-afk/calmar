@@ -6,11 +6,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/style.scss">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Кальмар</title>
 </head>
 
 <body>
+  <header class="header container">
+    <img src="img/header-logo.png" class="header__logo" alt="" width="114" height="113">
+    <button class="header__toggles"></button>
+    <div class="header__wrapper">
+      <button class="button button--login">Вход</button>
+      <button class="button button--reg">Регистрация</button>
+    </div>
+  </header>
+  <main>
+    <section class="conection container">
+      <h1 class="visually-hidden">Страничка приложения "Кальмар"</h1>
+      <img class="conection__img" src="img/kalmar-img.png" width="1120" height="655" alt="">
+      <h2 class="conection__title">Обратный звонок на сайт</h2>
+      <p class="conection__text">Получайте в 3 раза больше звонков сразу после установки виджета на Ваш сайт
+        Сервис окупает свой годовой тариф в первую же неделю</p>
+      <button class="button conection__button">Подключить</button>
+      <img class="conection__boble" src="img/boble.png" alt="">
+      <img class="conection__boble-one" src="img/boble-one.png" alt="">
+      <img class="conection__bubl-3" src="img/buble-3.png" alt="">
+    </section>
+    <section class="how container">
+      <h2 class="how__title">Как работает виджет обратного звонка</h2>
+      <ol start="1" class="how__list">
+        <li class="how__card">
+          <h3 class="how__sub-title">Устанавливаете код на сайт</h3>
+          <p class="how__text">Вы устанавливаете на свой сайт специальный html-код. Это займет 3 минуты или мы поможем
+            вам</p>
 
+        </li>
+        <li class="how__card">
+          <h3 class="how__sub-title">На Вашем сайте появится кнопка и всплывающее окно</h3>
+          <p class="how__text">Посетители заходят на Ваш сайт, видят кнопку или всплывающее окно и вводят свой телефон
+          </p>
+        </li>
+        <li class="how__card">
+          <h3 class="how__sub-title">Сервис автоматически звонит менеджеру и клиенту</h3>
+          <p class="how__text">Как только менеджер взял трубку, сервис автоматически связывается с клиентом и соединяет
+            его с менеджером. В среднем за 18,5 сек</p>
+        </li>
+        <li class="how__card">
+          <h3 class="how__sub-title">Клиент теперь Ваш !</h3>
+          <p class="how__text">Уже через 28 секунд Ваш сотрудник общается с клиентом и делает продажу!</p>
+        </li>
+      </ol>
+      <img class="how__aqua" src="img/aqqa-1.png" alt="">
+      <img class="how__aqua-2" src="img/aqqa-2.png" alt="">
+      <img class="how__aqua-3" src="img/aqqa-3.png" alt="">
+      <img src="img/aqqa-4.png" alt="" class="how__aqua-4">
+    </section>
+    <section class="video container">
+      <h2 class="video__title">Посмотрите видео как работает виджет</h2>
+      <img class="video__img" src="img/video-play.png" alt="">
+    </section>
+    <section class="price container">
+      <h2 class="visually-hidden">Цена пакетов</h2>
+      <ul class="price__list">
+        <li class="price__card">
+          <h3 class="price__sub-title">Бесплатно О руб.</h3>
+          <p class="price__text">Тестовая версия на 14 дней и 20 руб. на балансе для проверки качества связи</p>
+          <button class="button button--try price__button">ПОПРОБОВАТЬ</button>
+        </li>
+        <li class="price__card">
+          <h3 class="price__sub-title">При оплате на <br>
+            1 год от 299 руб.</h3>
+          <p class="price__text">Платите только за наш сервис, связь оплачивается по минимальной цене 4 руб. за минуту.
+          </p>
+          <button class="button button--try">ПОПРОБОВАТЬ</button>
+        </li>
+      </ul>
+      <picture>
+        <source srcset="img/mg-fot-2.png" media="(min-width: 768px)">
+        <img class="price__img" src="img/mg-fotpng.png" alt="">
+      </picture>
+      <img class="price__fish" src="img/fish.png" alt="">
+    </section>
+  </main>
 </body>
 
 </html>
