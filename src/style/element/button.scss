@@ -10,19 +10,21 @@
   border: 0px;
   padding: 16px 53px 16px 53px;
 
+  @include media-tablet-and-up {
+    padding: 15px 45px;
+  }
+
   @include media-lg-desktop-and-up {
     font-size: 36px;
     line-height: 42px;
-    width: 370px;
-    height: 82px;
+    padding: 20px 60px;
   }
 
   &--try {
     font-weight: normal;
     border: 3px solid white;
     background-color: transparent;
-    max-width: 360px;
-    max-height: 67px;
+    padding: 10px 25px;
     display: flex;
     justify-content: center;
     align-items: center;

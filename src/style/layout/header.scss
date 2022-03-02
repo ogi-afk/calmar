@@ -4,14 +4,20 @@
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 
+  @include media-tablet-and-up {
+    top: 50px;
+  }
+  @include media-md-desktop-and-up {
+    top: 70px;
+  }
+
   &__logo {
     max-width: 50px;
-    margin-top: 25px;
 
     @include media-mobile-and-tablet {
       max-width: 100px;
@@ -19,7 +25,6 @@
 
     @include media-sm-desktop-and-up {
       max-width: 114px;
-      margin-top: 75px;
     }
   }
 
@@ -36,9 +41,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    @include media-sm-desktop-and-up {
-      margin-top: 100px;
     }
   }
 }
