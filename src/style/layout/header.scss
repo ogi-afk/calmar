@@ -1,0 +1,46 @@
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @include media-tablet-and-up {
+    top: 50px;
+  }
+  @include media-md-desktop-and-up {
+    top: 70px;
+  }
+
+  &__logo {
+    max-width: 50px;
+
+    @include media-mobile-and-tablet {
+      max-width: 100px;
+    }
+
+    @include media-sm-desktop-and-up {
+      max-width: 114px;
+    }
+  }
+
+  &__toggles {
+    @include media-tablet-and-up {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: none;
+
+    @include media-tablet-and-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.video {
+  &__title {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include media-md-desktop-and-up {
+      font-size: 64px;
+      line-height: 96px;
+      text-align: left;
+      margin-left: 200px;
+      margin-right: 250px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(65, 65, 65, 1);
+    background-size: cover;
+  }
+
+  &__img {
+    max-width: 100px;
+    max-height: 101px;
+
+    @include media-xxs-mobile-only-and-up {
+      max-width: 155px;
+      max-height: 155px;
+    }
+    @include media-md-desktop-and-up {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}
